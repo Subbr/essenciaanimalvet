@@ -30,10 +30,19 @@ jobs:
       - name: Build
         run: npm run build -- --base=$BASE_PATH
 
+      - name: Debug - list build output
+        run: |
+          echo "== raiz do projeto =="
+          ls -la
+          echo "== .output (se existir) =="
+          find .output -maxdepth 3 2>/dev/null || echo "sem pasta .output"
+          echo "== dist (se existir) =="
+          find dist -maxdepth 3 2>/dev/null || echo "sem pasta dist"
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./.output/public
           destination_dir: ${{ env.DEST_DIR }}
           keep_files: true
