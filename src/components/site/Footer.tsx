@@ -1,4 +1,4 @@
-import { Instagram, Facebook, MapPin, Clock, PawPrint } from "lucide-react";
+import { Instagram, Facebook, MapPin, Clock, PawPrint, Phone } from "lucide-react";
 import { Bamboo } from "./Bamboo";
 
 export function Footer() {
