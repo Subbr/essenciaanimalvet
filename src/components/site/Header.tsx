@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, MessageCircle, Instagram } from "lucide-react";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 const links = [
   { href: "#inicio", label: "Início" },
@@ -34,13 +35,12 @@ export function Header() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-5 md:px-8 h-18 py-4 flex items-center justify-between gap-6">
-        <a href="#inicio" className="flex items-center gap-2 min-w-0">
-          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-forest text-cream font-display text-lg italic">
-            e
-          </span>
-          <span className="font-display text-lg md:text-xl text-forest truncate">
-            Essência <span className="italic text-green-brand">Animal Vet</span>
-          </span>
+        <a href="#inicio" aria-label="Essência Animal Vet — Início" className="flex items-center min-w-0">
+          <img
+            src={logoAsset.url}
+            alt="Essência Animal Vet"
+            className="h-12 md:h-14 w-auto object-contain"
+          />
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">

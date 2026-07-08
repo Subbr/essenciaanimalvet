@@ -1,5 +1,6 @@
 import { Instagram, Facebook, MapPin, Clock, PawPrint, Phone } from "lucide-react";
 import { Bamboo } from "./Bamboo";
+import logoAsset from "@/assets/logo.png.asset.json";
 
 export function Footer() {
   return (
@@ -8,13 +9,12 @@ export function Footer() {
       <Bamboo className="bottom-0 -right-16 w-[320px]" opacity={0.1} rotate={15} flip />
       <div className="relative mx-auto max-w-7xl px-5 md:px-8 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-1">
-          <div className="flex items-center gap-2">
-            <span className="grid h-10 w-10 place-items-center rounded-full bg-cream text-forest font-display text-lg italic">
-              e
-            </span>
-            <div className="font-display text-xl text-cream">
-              Essência <span className="italic text-mustard">Animal Vet</span>
-            </div>
+          <div className="rounded-2xl bg-cream/95 p-3 inline-block">
+            <img
+              src={logoAsset.url}
+              alt="Essência Animal Vet"
+              className="h-20 w-auto object-contain"
+            />
           </div>
           <p className="mt-4 text-sm text-cream/70 leading-relaxed">
             Saúde e amor para a essência de cada vida.
