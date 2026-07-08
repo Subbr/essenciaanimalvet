@@ -14,7 +14,8 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm ci
+      - name: Install dependencies
+        run: npm install
 
       - name: Set base path per branch
         run: |
@@ -26,7 +27,8 @@ jobs:
             echo "DEST_DIR=dev" >> $GITHUB_ENV
           fi
 
-      - run: npm run build -- --base=$BASE_PATH
+      - name: Build
+        run: npm run build -- --base=$BASE_PATH
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
