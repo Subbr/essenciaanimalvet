@@ -4,7 +4,7 @@ import { MessageCircle, Send } from "lucide-react";
 import { Bamboo } from "./Bamboo";
 
 // TODO: substituir pelo número real, ex.: 5561999999999
-const WHATSAPP = "5561900000000";
+const WHATSAPP = "5561998135153";
 
 export function Contact() {
   const [sent, setSent] = useState(false);

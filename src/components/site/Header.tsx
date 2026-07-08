@@ -56,7 +56,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <a
-            href="https://wa.me/5561900000000"
+            href="https://wa.me/5561998135153"
             target="_blank"
             rel="noreferrer"
             className="btn-primary hidden sm:inline-flex text-sm"

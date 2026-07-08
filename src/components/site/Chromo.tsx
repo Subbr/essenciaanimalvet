@@ -77,7 +77,7 @@ export function Chromo() {
           </div>
 
           <a
-            href="https://wa.me/5561900000000"
+            href="https://wa.me/5561998135153"
             target="_blank"
             rel="noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-full bg-mustard text-forest px-6 py-3 font-medium hover:bg-cream transition-colors"
