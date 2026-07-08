@@ -73,27 +73,6 @@ export function Hero() {
             </a>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.7, duration: 0.7 }}
-            className="mt-10 flex gap-6 text-xs text-forest/60"
-          >
-            <div>
-              <div className="font-display text-2xl text-forest">+12</div>
-              <div>anos cuidando</div>
-            </div>
-            <div className="w-px bg-border" />
-            <div>
-              <div className="font-display text-2xl text-forest">98%</div>
-              <div>tutores satisfeitos</div>
-            </div>
-            <div className="w-px bg-border" />
-            <div>
-              <div className="font-display text-2xl text-forest">7 dias</div>
-              <div>de atendimento*</div>
-            </div>
-          </motion.div>
         </div>
 
         <motion.div
