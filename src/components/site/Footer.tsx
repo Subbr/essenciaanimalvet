@@ -1,4 +1,4 @@
-import { Instagram, Facebook, MapPin, Clock, PawPrint } from "lucide-react";
+import { Instagram, Facebook, MapPin, Clock, PawPrint, Phone } from "lucide-react";
 import { Bamboo } from "./Bamboo";
 
 export function Footer() {
@@ -21,7 +21,9 @@ export function Footer() {
           </p>
           <div className="mt-6 flex gap-3">
             <a
-              href="#"
+              href="https://www.instagram.com/essencia.animal.vet/"
+              target="_blank"
+              rel="noreferrer"
               aria-label="Instagram"
               className="grid h-10 w-10 place-items-center rounded-full border border-cream/25 hover:bg-mustard hover:text-forest hover:border-mustard transition-colors"
             >
@@ -34,7 +36,21 @@ export function Footer() {
             >
               <Facebook size={16} />
             </a>
+            <a
+              href="tel:+5561998135153"
+              aria-label="Telefone"
+              className="grid h-10 w-10 place-items-center rounded-full border border-cream/25 hover:bg-mustard hover:text-forest hover:border-mustard transition-colors"
+            >
+              <Phone size={16} />
+            </a>
           </div>
+          <a
+            href="tel:+5561998135153"
+            className="mt-4 inline-flex items-center gap-2 text-sm text-cream/80 hover:text-mustard transition-colors"
+          >
+            <Phone size={14} className="text-mustard" />
+            (61) 99813-5153
+          </a>
         </div>
 
         <div>

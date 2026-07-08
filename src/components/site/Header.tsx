@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, MessageCircle } from "lucide-react";
+import { Menu, X, MessageCircle, Instagram } from "lucide-react";
 
 const links = [
   { href: "#inicio", label: "Início" },
   { href: "#sobre", label: "Sobre" },
   { href: "#servicos", label: "Serviços" },
   { href: "#cromoterapia", label: "Cromoterapia" },
+  { href: "#depoimentos", label: "Depoimentos" },
   { href: "#contato", label: "Contato" },
 ];
 
@@ -56,7 +57,16 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <a
-            href="https://wa.me/5561900000000"
+            href="https://www.instagram.com/essencia.animal.vet/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram Essência Animal Vet"
+            className="hidden sm:grid h-10 w-10 place-items-center rounded-full border border-border text-forest hover:bg-mustard hover:border-mustard transition-colors"
+          >
+            <Instagram size={16} />
+          </a>
+          <a
+            href="https://wa.me/5561998135153"
             target="_blank"
             rel="noreferrer"
             className="btn-primary hidden sm:inline-flex text-sm"

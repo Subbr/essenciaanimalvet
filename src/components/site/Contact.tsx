@@ -4,7 +4,7 @@ import { MessageCircle, Send } from "lucide-react";
 import { Bamboo } from "./Bamboo";
 
 // TODO: substituir pelo número real, ex.: 5561999999999
-const WHATSAPP = "5561900000000";
+const WHATSAPP = "5561998135153";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
@@ -49,6 +49,12 @@ export function Contact() {
               Ligue direto para a clínica durante o horário de atendimento e informe a situação
               do seu pet.
             </p>
+            <a
+              href="tel:+5561998135153"
+              className="mt-3 inline-flex items-center gap-2 font-display text-forest hover:text-terracotta transition-colors"
+            >
+              (61) 99813-5153
+            </a>
           </div>
         </div>
 
