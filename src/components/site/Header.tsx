@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, MessageCircle, Instagram } from "lucide-react";
-import logoAsset from "@/assets/logo.png";
+import logoAsset from "@/assets/logo.svg";
 
 const links = [
   { href: "#inicio", label: "Início" },
