@@ -59,7 +59,7 @@ export function ProposalPopup() {
     <AnimatePresence>
       {open && (
         <motion.div
-          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-forest/70 backdrop-blur-sm"
+          className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-forest/70 backdrop-blur-sm overflow-hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -67,7 +67,7 @@ export function ProposalPopup() {
           onClick={close}
         >
           <motion.div
-            className="relative w-full max-w-lg max-h-[88vh] overflow-y-auto rounded-3xl bg-cream shadow-[0_30px_80px_-20px_rgba(30,81,40,0.55)] p-7 md:p-9"
+            className="relative w-full max-w-lg max-h-[88vh] overflow-y-auto overflow-x-hidden rounded-3xl bg-cream shadow-[0_30px_80px_-20px_rgba(30,81,40,0.55)] p-7 md:p-9"
             initial={{ opacity: 0, y: 24, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 16, scale: 0.97 }}
