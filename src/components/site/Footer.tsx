@@ -1,6 +1,6 @@
 import { Instagram, Facebook, MapPin, Clock, PawPrint, Phone } from "lucide-react";
 import { Bamboo } from "./Bamboo";
-import logoAsset from "@/assets/logo.svg";
+import logoAsset from "@/assets/logo.png";
 
 export function Footer() {
   return (
