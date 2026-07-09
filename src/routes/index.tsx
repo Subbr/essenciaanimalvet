@@ -11,6 +11,7 @@ import { PetlovePartner } from "@/components/site/PetlovePartner";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 import { WhatsFab } from "@/components/site/WhatsFab";
+import { ProposalPopup } from "@/components/site/ProposalPopup";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -33,6 +34,7 @@ function Index() {
       </main>
       <Footer />
       <WhatsFab />
+      <ProposalPopup /> {/* ← adicionar */}
     </div>
   );
 }
